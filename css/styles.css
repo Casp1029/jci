@@ -5,26 +5,27 @@
 body {
   display: grid;
   margin: 0;
-  grid-template-rows: 115px 1400px 720px 770px auto 880px 1220px 230px; }
+  grid-template-rows: 115px 1500px 1050px 770px auto 880px 1220px 230px; 
+}
+
 
 .body_tilmeld {
   display: grid;
-  grid-template-rows: 115px auto auto; }
+  grid-template-rows: 115px auto auto; 
+}
 
 h1 {
   font-size: 45pt;
-  font-family: 'Muli', sans-serif;
-  font-weight: bold;
-  text-align: center;
-  color: #0097d7; }
+  font-family: "Century Gothic";
+  font-weight: bold; }
 
 h2 {
   font-size: 25pt;
-  font-family: 'Muli', sans-serif; }
+  font-family: "Century Gothic"; }
 
 h3 {
-  font-size: 14pt;
-  font-family: 'Muli', sans-serif;
+  font-size: 9pt;
+  font-family: "Century Gothic";
   font-weight: bold; }
 
 p {
@@ -47,19 +48,235 @@ img {
   max-width: 100%;
   height: auto; }
 
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  color: #0097d7;
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
+  background-color: white; }
+
+.dropdown {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  font-family: "lato";
+  height: 100px; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0097d7;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 85px;
+  right: 0; }
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+.dropdown-content a:hover {
+  background: white;
+  color: #f37121; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+.menu_web {
+  display: none; }
+
+.lillelogo {
+  *margin-top: 10px;
+  margin-left: 10px; }
+
+.fejlbillede {
+  width: auto;
+  height: auto; }
+
+.header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 5000;
+  color: black; }
+
+a:hover {
+  color: #f37121;
+  *background-color: #f37121;
+  text-decoration: none; }
+
+.some {
+  width: 90px;
+  display: flex;
+  justify-content: space-around;
+  *background-color: red;
+  display: none; }
+
+.in {
+  margin-top: 10px;
+  background-color: #0097d7;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  border: none;
+  font-family: 'Nunito', sans-serif; }
+
+.fb {
+  margin-top: 10px;
+  background-color: #0097d7;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  border: none;
+  font-family: 'Nunito', sans-serif; }
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #f37121;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 7000; }
+
+#return-to-top i {
+  color: white;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+#return-to-top:hover {
+  background: #f37121; }
+
+#return-to-top:hover i {
+  color: white;
+  top: 5px; }
+
 header {
   position: fixed;
   width: 100%;
   height: 115px;
-  background-color: red; }
+  background-color: white; }
 
 .forside {
-  grid-row: 2;
-  background-color: cornflowerblue; }
+  grid-row: 2; }
+
+.background {
+  height: 600px;
+  width: auto;
+  background-image: url("billeder/business-3370832_1920.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.flex-container {
+  display: flex;
+  flex-direction: column; }
+
+.box1 {
+  background-color: #f37121;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-left: 30pt;
+  padding-right: 30pt; }
+
+.box2 {
+  background-color: #0097d7;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-left: 30pt;
+  padding-right: 30pt; }
+
+.box3 {
+  background-color: #99cccc;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-left: 30pt;
+  padding-right: 30pt; }
 
 .om_os {
-  grid-row: 3;
-  background-color: blue; }
+  grid-row: 3; }
+
+.om-os {
+  background-color: white;
+  text-align: center;
+  color: #0097d7; }
+
+.text1 {
+  color: black;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.flex-container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.flex-container2 img {
+  width: 13vw;
+  height: 10vw;
+  margin: 0 auto; }
+
+.flex-container3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #0097d7;
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.flex-container3 h3 {
+  font-size: 7pt; }
+
+.knap_blivmedlem {
+  background-color: #f37121;
+  margin-top: 2%;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  height: 50px;
+  width: 200px;
+  font-family: "Century Gothic";
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center; }
+
+.flex-container4 {
+  display: flex;
+  justify-content: space-around; }
 
 .kalender {
   grid-row: 4;
@@ -101,43 +318,54 @@ footer {
   background-color: burlywood; }
 
 @media screen and (min-width: 992px) {
+  
+  .lillelogo {
+    height: 55px;
+    width: auto;
+    display: block; }
+
   body {
     display: grid;
     margin: 0;
-    grid-template-rows: 85px 685px 765px 765px 770px auto 770px 765px; }
-
+    grid-template-rows: 85px 930px 950px 765px 770px auto 770px 765px; }
+  
   h1 {
     font-size: 60pt;
-    font-family: 'Muli', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    color: #0097d7; }
+    font-family: "Century Gothic";
+    font-weight: bold; }
 
   h2 {
     font-size: 30pt;
-    font-family: 'Muli', sans-serif; }
+    font-family: "Century Gothic"; }
 
   h3 {
     font-size: 18pt;
-    font-family: 'Muli', sans-serif;
+    font-family: "Century Gothic";
     font-weight: bold; }
 
   p {
     font-size: 16pt;
     line-height: 24pt;
-    font-family: "lato";
-    margin: 0;
-    padding: 0; }
+    font-family: "lato"; }
 
-  header {
+  .header {
+    display: flex;
     position: fixed;
-    width: 100%;
-    height: 85px;
-    background-color: red; }
+    background-color: white;
+    padding: 0 2%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    height: 80px; }
 
-  .forside {
-    grid-row: 2;
-    background-color: cornflowerblue; }
+  .menu_web {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    padding-top: 15px;
+    *background-color: aqua;
+    margin-left: 20%;
+    font-family: "Century Gothic";
+    font-weight: bold; }
 
   .om_os {
     grid-row: 3;
@@ -409,24 +637,74 @@ footer {
     width: 442px;
     transition: .5s ease; }
 
-  .medlemskab {
-    grid-row: 7;
-    background-color: aqua; }
+  .dropdown {
+    display: none; }
 
-  footer {
-    grid-row: 8;
-    background-color: burlywood; }
+  a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px; }
 
-  .body_tilmeld {
-    display: grid;
-    grid-template-rows: 85px 685px 765px; }
+  .some {
+    display: block; } }
 
-  .section_tilmeld {
-    grid-row: 2;
-    background-color: cornflowerblue; }
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 85px;
+  background-color: white; }
+
+footer {
+  grid-row: 8;
+  background-color: burlywood; }
+
+.body_tilmeld {
+  display: grid;
+  grid-template-rows: 85px 685px 765px; }
+
+.section_tilmeld {
+  grid-row: 2;
+  background-color: cornflowerblue; }
 
   .footer_tilmeld {
     grid-row: 3;
-    background-color: burlywood; } }
+    background-color: burlywood; } 
+}
+
+@media screen and (min-width: 1200px) {
+  .box1 {
+    width: 33.3%; }
+
+  .box2 {
+    width: 33.3%; }
+
+  .box3 {
+    width: 33.3%; }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row; }
+
+  .text1 {
+    margin-left: 20%;
+    margin-right: 20%; }
+
+  .flex-container2 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%; }
+
+  .flex-container3 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%; }
+
+  .flex-container3 h3 {
+    font-size: 16pt; }
+
+  .flex-container2 img {
+    width: 7vw;
+    height: 5vw; } }
 
 /*# sourceMappingURL=styles.css.map */

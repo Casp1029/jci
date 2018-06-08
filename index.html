@@ -36,7 +36,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <script src="https://use.fontawesome.com/59fbb91632.js"></script>
 
 
     <!-- Java -->
@@ -50,21 +50,144 @@
 
 <header>
 
-    HEADER
+    <div class="header">
+        <a href="index.html"> <img class="lillelogo" src="images/logo.png"></a>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-bars fa-3x"></i></button>
+            <div class="dropdown-content">
+                <a href="index.html">HJEM</a>
+                <a href="omos.html">OM OS</a>
+                <a href="forhandler.html">KALENDER</a>
+                <a href="galleri.html">PROJEKTER</a>
+                <a href="galleri.html">MEDLEMSKAB</a>
+                <a href="galleri.html">KONTAKT</a>
+            </div>
+        </div>
+        <div class="menu_web">
+            <a href="index.html">FORSIDE</a>
+            <a href="omos.html">OM OS</a>
+            <a href="kalender.html">KALENDER</a>
+            <a href="projekter.html">PROJEKTER</a>
+            <a href="medlemskab.html">MEDLEMSKAB</a>
+            <a href="kontakt.html">KONTAKT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+            <div class="some">
+        <a href="https://www.facebook.com/"><button class="in">in</button></a>
+        <a href="https://www.facebook.com/"><button class="fb">f</button></a>
+            </div>
+    </div>
+
 
 </header>
 
 
 <section class="forside">
 
-    Forside
+    <div class="background">
+
+    </div>
+
+<div class="flex-container">
+
+    <div class="box1"><h2>Kompetenceudvikling</h2>
+        <p>Hos JCI har du mulighed for at udvikle dine lederkompetencer
+        igennem træning og praktiske ledelsesopgaver. Du kan påtage dig
+        forskellige ledelsesopgaver på lokalt, nationalt og international
+            niveau.</p>
+        <br>
+        <br>
+    </div>
+
+
+    <div class="box2"><h2>Projektledelse</h2>
+        <p>Som medlem hos os, får du mulighed for at udvikle dig gennem
+        udførelse af projekter - enten et af JCI’s egne, eller et, du selv
+        står i spidsen for. Hvert år tilbydes der undervisning i
+        projektledelse, så du får de rette ressourcer til at påtage dig
+            lederrollen.</p>
+        <br>
+        <br>
+    </div>
+
+    <div class="box3">
+        <h2>Networking</h2>
+        <p>Med 175.000 medlemmere i verden, får du adgang til JCI
+        netværk på nationalt og internationalt plan. Der afholdes årligt
+        arrangementer og kongresser, hvor du kan få forbindelse til andre
+            erhvervsdrivende, foreninger og virksomheder.</p>
+        <br>
+        <br>
+    </div>
+</div>
 
 </section>
-
-
 <section class="om_os">
 
-    Om os
+
+    <div class="om-os">
+        <h1> OM OS</h1>
+    <div class="text1">
+        <P>Junior Chamber International er en international organisation med
+            afdelinger fordelt over 100 lande. Vi er det førende netværk i Danmark
+            for handlekraftige og engagerede unge i 20’erne og 30’erne, der ønsker
+            at udvikle sig inden for et eller flere af vores følgende områder;
+            personal development, business, community og international.
+            Som medlem af JCI Slagelse får du mulighed for at deltage i afdelingsmøder,
+            projekter, kurser, training og konkurrencer med det formål at udvikle dine
+            faglige kompetencer og personlige egenskaber samt dit sociale netværk.
+            <br><br>
+
+    Vores vision: At være det ledende globale netværk for unge, aktive borgere.
+            <br>
+            <br>
+        Vores mission: At skabe udviklingsmuligheder, der giver unge mennesker mulighed for at gøre en positiv ændring.</P>
+    </div>
+
+    </div>
+
+    <br><br><br>
+    <div class="flex-container2">
+
+        <div class="boks1">
+
+            <img src="css/billeder/ikon1.png" height="91" width="121"/>
+
+            <div class="info"> <h3>GRUNDLAGT I 1910</h3></div>
+
+        </div>
+
+        <div class="boks2">
+
+            <img src="css/billeder/ikon2.jpg" height="91" width="121"/>
+            <div class="info"><h3>100 LANDE</h3></div>
+
+        </div>
+
+        <div class="boks3">
+
+            <img src="css/billeder/ikon4.jpg" height="91" width="121"/>
+
+
+            <div class="info"> <h3>6000 AFDELINGER</h3></div>
+
+        </div>
+
+        <div class="boks4">
+
+            <img src="css/billeder/ikon3.jpg" height="91" width="121"/>
+            <div class="info"> <h3>150.000 MEDLEMMERE</h3></div>
+        </div>
+
+        
+
+
+    </div>
+
+    <div class="flex-container4">
+
+    <button class="knap_blivmedlem">BLIV MEDLEM</button>
+    </div>
 
 </section>
 
@@ -201,9 +324,9 @@
 </footer>
 
 
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
         crossorigin="anonymous">
 </script>
@@ -216,11 +339,28 @@
             mode: 'horizontal',
             visibleItems: 3
         });
+  
+<!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
 
-
-
+    // ===== Scroll to Top ====
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
     });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });
+
+
 </script>
 </body>
-</html>
