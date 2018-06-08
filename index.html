@@ -16,15 +16,15 @@
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="description" content="JCI Slagelses hjemmeside">
+    <meta name="keywords" content="netværk,JCI,projektledelse,organisation">
     <!-- Titel, description og keywords skal være forskellige på alle undersider -->
 
-    <meta property="og:title" content="titel">
+    <meta property="og:title" content="JCI Slagelse">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://www.domain.dk">
     <meta property="og:image" content="https://www.domain.dk/img.jpg">
-    <meta property="og:description" content="Beskrivelse">
+    <meta property="og:description" content="JCI Slagelse">
     <meta property="og:locale" content="da_DK">
 
 
@@ -39,6 +39,8 @@
     <script src="https://use.fontawesome.com/59fbb91632.js"></script>
 
 
+    <!-- Java -->
+    <link href="css/timeline.min.css" rel="stylesheet">
 
 </head>
 
@@ -192,22 +194,119 @@
 
 <section class="kalender">
 
-    Kalender
+    <h1>Kalender</h1>
+
+        <div class="timeline">
+            <div class="timeline__wrap">
+                <div class="timeline__items">
+                    <div class="timeline__item">
+                        <div class="timeline__content">
+                            <h2>13. juni</h2>
+                            <p>Afdelingsmøde / training.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__content">
+                            <h2>August</h2>
+                            <p>Sommerfest og valgforsamling (endnu ikke fastsat dato).</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__content">
+                            <h2>8. august</h2>
+                            <p>Afdelingsmøde / Den gyldne mikrofon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 
 </section>
 
 
 <section class="galleri">
 
-    Galleri
+    <div class="galleri_orange_kaffe">
+        <div class="galleri_orange_kaffe_overlay">
+            <div class="galleri_orange_kaffe_overlay_tekst"><p>Kaffe</p></div>
+        </div>
+    </div>
+
+    <div class="galleri_turkis_column_1"></div>
+
+    <div class="galleri_kalender">
+        <div class="galleri_kalender_overlay">
+            <div class="galleri_kalender_overlay_tekst"><p>Planlægning er succes</p></div>
+        </div>
+    </div>
+
+    <div class="galleri_teamwork">
+        <div class="galleri_teamwork_overlay">
+            <div class="galleri_teamwork_overlay_tekst"><p>Rummelighed er kærlighed</p></div>
+        </div>
+    </div>
+
+    <a href="tilmeld.html"><div class="galleri_bliv_medlem">
+
+            <h3>BLIV MEDLEM</h3>
+
+    </div></a>
+
+    <div class="galleri_noter">
+        <div class="galleri_noter_overlay">
+            <div class="galleri_noter_overlay_tekst">
+                <p>6 frugter om dagen</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="galleri_pc">
+        <div class="galleri_pc_overlay">
+            <div class="galleri_pc_overlay_tekst">
+                <p>Inspirerende ord</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="galleri_mand_kigger_noter">
+        <div class="galleri_mand_kigger_noter_overlay">
+            <div class="galleri_mand_kigger_noter_overlay_tekst">
+                <p>Inspration</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="galleri_turkis_column_4"></div>
 
 </section>
 
 
 <section class="projekter">
 
-    Projekter
+    <h1 class="Projekter_overskrift">Projekter</h1>
 
+
+    <div class="projekter_projekter">
+
+        <a><div class="den_gyldne_mikrofon"></div></a>
+
+        <a href="http://www.grangia.dk/"><div class="grangia_erhvervspris"></div></a>
+
+        <a><div class="snak_saa_debatter"></div></a>
+
+    </div>
+
+    <div class="projekter_projekter_mobile">
+
+        <img src="images/den_gyldne_mikrofon.jpg">
+
+        <img src="images/grangia.jpg">
+
+        <img src="images/snak_saa_debatter_2.jpg">
+
+    </div>
 </section>
 
 
@@ -225,6 +324,22 @@
 </footer>
 
 
+  
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+        crossorigin="anonymous">
+</script>
+<script src="js/timeline.min.js"></script>
+
+<script>
+    $(document).ready(function (e) {
+
+        jQuery('.timeline').timeline({
+            mode: 'horizontal',
+            visibleItems: 3
+        });
+  
 <!-- Return to Top -->
 <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
