@@ -8,7 +8,7 @@
 body {
   display: grid;
   margin: 0;
-  grid-template-rows: 115px 1400px 720px 770px 1310px 880px 1220px 230px;
+  grid-template-rows: 115px 1500px 1050px 770px 1310px 880px 1220px 230px;
 }
 
 .body_tilmeld {
@@ -17,24 +17,24 @@ body {
 }
 
 h1 {
- font-size: 60pt;
+ font-size: 45pt;
   font-family: "Century Gothic";
   font-weight: bold;
 }
 
 h2 {
-  font-size: 30pt;
+  font-size: 25pt;
   font-family: "Century Gothic";
 }
 
 h3 {
-  font-size: 18pt;
+  font-size: 9pt;
   font-family: "Century Gothic";
   font-weight: bold;
 }
 
 p {
-  font-size: 16pt;
+  font-size: 14pt;
   line-height: 24pt;
   font-family: "lato";
 
@@ -61,6 +61,7 @@ img {
 }
 
 
+
 .dropbtn {
   font-size: 16px;
   border: none;
@@ -74,6 +75,10 @@ img {
 
 .dropdown {
   text-align: center;
+
+header {
+  position: fixed;
+
   width: 100%;
   position: relative;
   display: inline-block;
@@ -104,12 +109,125 @@ img {
   color: #f37121;
 }
 
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .menu_web {
   display: none;
+
+.forside {
+  grid-row: 2;
+
+}
+
+.background{   //bruges til baggrundsbillede
+  height: 600px;
+  width: auto;
+  background-image: url("billeder/business-3370832_1920.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box1{
+  background-color: #f37121;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-left: 30pt;
+  padding-right: 30pt;
+}
+
+.box2{
+  background-color: #0097d7;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-left: 30pt;
+  padding-right: 30pt;
+}
+
+.box3{
+  background-color: #99cccc;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-left: 30pt;
+  padding-right: 30pt;
+}
+
+
+
+.om_os {
+  grid-row: 3;
+}
+
+.om-os{
+  background-color: white;
+  text-align: center;
+  color: #0097d7;
+}
+
+.text1{
+  color: black;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flex-container2 img {
+  width: 13vw;
+  height: 10vw;
+  margin: 0 auto;
+}
+
+.flex-container3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #0097d7;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+
+.flex-container3 h3 {
+font-size: 7pt;
+}
+
+.knap_blivmedlem{
+  background-color: #f37121;
+  margin-top: 2%;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  height: 50px;
+  width: 200px;
+  font-family: "Century Gothic";
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+
+
+}
+
+.flex-container4{
+  display: flex;
+  justify-content: space-around;
 }
 
 .lillelogo{
@@ -307,10 +425,33 @@ a:hover{
   body {
     display: grid;
     margin: 0;
-    grid-template-rows: 85px 685px 765px 765px 770px 770px 770px 765px;
+    grid-template-rows: 85px 930px 950px 765px 770px 770px 770px 765px;
   }
 
-  header {
+  h1 {
+    font-size: 60pt;
+    font-family: "Century Gothic";
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 30pt;
+    font-family: "Century Gothic";
+  }
+
+  h3 {
+    font-size: 18pt;
+    font-family: "Century Gothic";
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 16pt;
+    line-height: 24pt;
+    font-family: "lato";
+  }
+
+    header {
     position: fixed;
     width: 100%;
     height: 85px;
@@ -319,12 +460,10 @@ a:hover{
 
   .forside {
     grid-row: 2;
-    background-color: cornflowerblue;
   }
 
   .om_os {
     grid-row: 3;
-    background-color: blue;
   }
 
   .kalender {
@@ -373,7 +512,50 @@ a:hover{
 
 
 @media screen and (min-width: 1200px) {
-  // COMPUTER WEB
+  .box1{
+    width: 33.3%;
+  }
+
+  .box2{
+    width: 33.3%;
+  }
+
+  .box3{
+    width: 33.3%;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .text1{
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .flex-container2{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .flex-container3{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .flex-container3 h3 {
+    font-size: 16pt;
+  }
+
+
+  .flex-container2 img {
+    width: 7vw;
+    height: 5vw;
+  }
+
 }
 
 @media print {
