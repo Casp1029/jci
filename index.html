@@ -36,6 +36,8 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://use.fontawesome.com/59fbb91632.js"></script>
+
 
 
 </head>
@@ -46,7 +48,34 @@
 
 <header>
 
-    HEADER
+    <div class="header">
+        <a href="index.html"> <img class="lillelogo" src="images/logo.png"></a>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-bars fa-3x"></i></button>
+            <div class="dropdown-content">
+                <a href="index.html">HJEM</a>
+                <a href="omos.html">OM OS</a>
+                <a href="forhandler.html">KALENDER</a>
+                <a href="galleri.html">PROJEKTER</a>
+                <a href="galleri.html">MEDLEMSKAB</a>
+                <a href="galleri.html">KONTAKT</a>
+            </div>
+        </div>
+        <div class="menu_web">
+            <a href="index.html">FORSIDE</a>
+            <a href="omos.html">OM OS</a>
+            <a href="kalender.html">KALENDER</a>
+            <a href="projekter.html">PROJEKTER</a>
+            <a href="medlemskab.html">MEDLEMSKAB</a>
+            <a href="kontakt.html">KONTAKT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+            <div class="some">
+        <a href="https://www.facebook.com/"><button class="in">in</button></a>
+        <a href="https://www.facebook.com/"><button class="fb">f</button></a>
+            </div>
+    </div>
+
 
 </header>
 
@@ -100,12 +129,27 @@
 </footer>
 
 
+<!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-    $(document).ready(function (e) {
-        // Din kode her
+<script type="text/javascript">
+
+    // ===== Scroll to Top ====
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
     });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });
+
+
 </script>
 </body>
-</html>
