@@ -1,4 +1,4 @@
-// Alt der gælder for mobil og højere
+@charset "utf-8";// Alt der gælder for mobil og højere
 
 * { // Gælder alt på hele siden
   -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
@@ -60,12 +60,62 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+
+
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  color: #0097d7;
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
+  background-color: white;
+}
+
+.dropdown {
+  text-align: center;
+
 header {
   position: fixed;
+
   width: 100%;
-  height: 115px;
-  background-color: red;
+  position: relative;
+  display: inline-block;
+  font-family: "lato";
+  height: 100px;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0097d7;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 85px;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: white;
+  color: #f37121;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.menu_web {
+  display: none;
 
 .forside {
   grid-row: 2;
@@ -178,40 +228,199 @@ font-size: 7pt;
 .flex-container4{
   display: flex;
   justify-content: space-around;
-
 }
 
-.kalender {
-  grid-row: 4;
-  background-color: yellow;
+.lillelogo{
+  *margin-top: 10px;
+  margin-left: 10px;
 }
 
-.galleri {
-  grid-row: 5;
-  background-color: crimson;
+.fejlbillede{
+  width: auto;
+  height: auto;
 }
 
-.projekter {
-  grid-row: 6;
-  background-color: green;
+
+.header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 5000;
+  color: black;
 }
 
-.medlemskab {
-  grid-row: 7;
-  background-color: aqua;
+
+a:hover{
+  color: #f37121;
+  *background-color: #f37121;
+  text-decoration: none;
 }
 
-footer {
-  grid-row: 8;
-  background-color: burlywood;
+.some{
+  width: 90px;
+  display: flex;
+  justify-content: space-around;
+  *background-color: red;
+  display: none;
 }
 
-@media screen and (min-width: 768px) {
-  // TABLET STÅENDE
+.in{
+  margin-top: 10px;
+  background-color: #0097d7;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  border: none;
+  font-family: 'Nunito', sans-serif;
 }
 
-@media screen and (min-width: 992px) {
-  // TABLET LIGGENDE
+.fb{
+  margin-top: 10px;
+  background-color: #0097d7;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #f37121;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 7000;
+}
+#return-to-top i {
+  color: white;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: #f37121;
+}
+#return-to-top:hover i {
+  color: white;
+  top: 5px;
+}
+
+  header {
+    position: fixed;
+    width: 100%;
+    height: 115px;
+    background-color: white;
+  }
+
+  .forside {
+    grid-row: 2;
+    background-color: cornflowerblue;
+  }
+
+  .om_os {
+    grid-row: 3;
+    background-color: blue;
+  }
+
+  .kalender {
+    grid-row: 4;
+    background-color: yellow;
+  }
+
+  .galleri {
+    grid-row: 5;
+    background-color: crimson;
+  }
+
+  .projekter {
+    grid-row: 6;
+    background-color: green;
+  }
+
+  .medlemskab {
+    grid-row: 7;
+    background-color: aqua;
+  }
+
+  footer {
+    grid-row: 8;
+    background-color: burlywood;
+  }
+
+  @media screen and (min-width: 768px) {
+    // TABLET STÅENDE
+  }
+
+  @media screen and (min-width: 992px) {
+    // TABLET LIGGENDE
+
+    .lillelogo {
+      height: 55px;
+      width: auto;
+      display: block;
+    }
+
+    .header {
+      display: flex;
+      position: fixed;
+      background-color: white;
+      padding: 0 2%;
+      padding-top: 15px;
+      padding-bottom: 10px;
+      height: 80px;
+
+    }
+
+    .menu_web {
+      display: flex;
+      width: 60%;
+      justify-content: space-around;
+      padding-top: 15px;
+      *background-color: aqua;
+      margin-left: 20%;
+      font-family: "Century Gothic";
+      font-weight: bold;
+    }
+
+    .dropdown {
+      display: none;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-size: 12px;
+
+    }
+
+    .some{
+      display: block;
+    }
+  }
 
   body {
     display: grid;
@@ -246,7 +455,7 @@ footer {
     position: fixed;
     width: 100%;
     height: 85px;
-    background-color: red;
+    background-color: white;
   }
 
   .forside {
@@ -299,7 +508,8 @@ footer {
     background-color: burlywood;
   }
 
-}
+
+
 
 @media screen and (min-width: 1200px) {
   .box1{
