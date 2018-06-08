@@ -5,10 +5,16 @@
   box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
 }
 
+$blaa: #0097d7;
+$blaahover: rgba(0, 151, 215, 0.85);
+$orange: #f37121;
+$turkis: #99cccc;
+$graa: #ebf1f3;
+
 body {
   display: grid;
   margin: 0;
-  grid-template-rows: 115px 1400px 720px 770px 1310px 880px 1220px 230px;
+  grid-template-rows: 115px 1400px 720px 770px auto 880px 1220px 230px;
 }
 
 .body_tilmeld {
@@ -17,24 +23,26 @@ body {
 }
 
 h1 {
- font-size: 60pt;
-  font-family: "Century Gothic";
+  font-size: 45pt;
+  font-family: 'Muli', sans-serif;
   font-weight: bold;
+  text-align: center;
+  color: $blaa;
 }
 
 h2 {
-  font-size: 30pt;
-  font-family: "Century Gothic";
+  font-size: 25pt;
+  font-family: 'Muli', sans-serif;
 }
 
 h3 {
-  font-size: 18pt;
-  font-family: "Century Gothic";
+  font-size: 14pt;
+  font-family: 'Muli', sans-serif;
   font-weight: bold;
 }
 
 p {
-  font-size: 16pt;
+  font-size: 14pt;
   line-height: 24pt;
   font-family: "lato";
 
@@ -80,26 +88,50 @@ header {
 
 .kalender {
   grid-row: 4;
-  background-color: yellow;
+  background: url("../images/kalenderbaggrund.png");
 }
 
 .galleri {
-  grid-row: 5;
-  background-color: crimson;
+  display: none;
 }
 
 .projekter {
-  grid-row: 6;
-  background-color: green;
+  grid-row: 5;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
 }
 
+.projekter h2 {
+  text-align: center;
+  color: white;
+}
+
+.Projekter_overskrift {
+  grid-row: 1;
+}
+
+.projekter_projekter {
+  display: none;
+}
+
+.projekter_projekter_mobile {
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: auto auto auto 70px;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+  justify-items: center;
+}
+
+
 .medlemskab {
-  grid-row: 7;
+  grid-row: 6;
   background-color: aqua;
 }
 
 footer {
-  grid-row: 8;
+  grid-row: 7;
   background-color: burlywood;
 }
 
@@ -110,11 +142,41 @@ footer {
 @media screen and (min-width: 992px) {
   // TABLET LIGGENDE
 
+
+
   body {
     display: grid;
     margin: 0;
-    grid-template-rows: 85px 685px 765px 765px 770px 770px 770px 765px;
+    grid-template-rows: 85px 685px 765px 765px 770px auto 770px 765px;
   }
+
+  h1 {
+    font-size: 60pt;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: $blaa;
+  }
+
+  h2 {
+    font-size: 30pt;
+    font-family: 'Muli', sans-serif;
+  }
+
+  h3 {
+    font-size: 18pt;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 16pt;
+    line-height: 24pt;
+    font-family: "lato";
+    margin: 0; // Ingen ydre margen fra paragraffer
+    padding: 0; // Ingen indre margen fra paragraffer
+  }
+
 
   header {
     position: fixed;
@@ -130,22 +192,322 @@ footer {
 
   .om_os {
     grid-row: 3;
-    background-color: blue;
+    background-color: $blaa;
   }
 
   .kalender {
     grid-row: 4;
-    background-color: yellow;
+    background: url("../images/kalenderbaggrund.png") center;
   }
 
   .galleri {
     grid-row: 5;
-    background-color: crimson;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 256.5px 256.5px 256.5px;
+  }
+
+  .galleri a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .galleri_orange_kaffe {
+    grid-row: 1;
+    grid-column: 1;
+    background: url("../images/orange_kaffe_400.jpg") center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .galleri_orange_kaffe_overlay {
+    display: grid;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $blaa;
+    opacity: 0;
+    transition: .5s ease;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .galleri_orange_kaffe_overlay:hover {
+    opacity: 0.75;
+    transition: .5s ease;
+  }
+
+  .galleri_orange_kaffe_overlay_tekst {
+    color: white;
+    opacity: 1;
+  }
+
+  .galleri_turkis_column_1 {
+    grid-row: 2 / span 3;
+    grid-column: 1;
+    background-color: $turkis;
+  }
+
+  .galleri_kalender {
+    grid-row: 1;
+    grid-column: 2;
+    background: url("../images/galleri_kalender_400.jpg") center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .galleri_kalender_overlay {
+    display: grid;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $blaa;
+    opacity: 0;
+    transition: .5s ease;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .galleri_kalender_overlay:hover {
+    opacity: 0.75;
+    transition: .5s ease;
+  }
+
+  .galleri_kalender_overlay_tekst {
+    color: white;
+    opacity: 1;
+  }
+
+  .galleri_teamwork {
+    grid-row: 2;
+    grid-column: 2;
+    background: url("../images/galleri_teamwork_400.jpg") center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .galleri_teamwork_overlay {
+    display: grid;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $blaa;
+    opacity: 0;
+    transition: .5s ease;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .galleri_teamwork_overlay:hover {
+    opacity: 0.75;
+    transition: .5s ease;
+  }
+
+  .galleri_teamwork_overlay_tekst {
+    color: white;
+    opacity: 1;
+  }
+
+  .galleri_bliv_medlem {
+    display: grid;
+    grid-row: 3;
+    grid-column: 2;
+    height: 100%;
+    background: $orange;
+    color: white;
+    align-items: center;
+    text-align: center;
+  }
+
+  .galleri_noter {
+    grid-row: 1 / span 2;
+    grid-column: 3;
+    background: url("../images/galleri_noter_515.jpg") center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .galleri_noter_overlay {
+    display: grid;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $blaa;
+    opacity: 0;
+    transition: .5s ease;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .galleri_noter_overlay:hover {
+    opacity: 0.75;
+    transition: .5s ease;
+  }
+
+  .galleri_noter_overlay_tekst {
+    color: white;
+    opacity: 1;
+  }
+
+  .galleri_pc {
+    grid-row: 3;
+    grid-column: 3;
+    background: url("../images/galleri_pc_400.jpg") center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .galleri_pc_overlay {
+    display: grid;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $blaa;
+    opacity: 0;
+    transition: .5s ease;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .galleri_pc_overlay:hover {
+    opacity: 0.75;
+    transition: .5s ease;
+  }
+
+  .galleri_pc_overlay_tekst {
+    color: white;
+    opacity: 1;
+  }
+
+  .galleri_mand_kigger_noter {
+    grid-row: 1;
+    grid-column: 4;
+    background: url("../images/galleri_mand_kigger_noter_400.jpg") center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .galleri_mand_kigger_noter_overlay {
+    display: grid;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: $blaa;
+    opacity: 0;
+    transition: .5s ease;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .galleri_mand_kigger_noter_overlay:hover {
+    opacity: 0.75;
+    transition: .5s ease;
+  }
+
+  .galleri_mand_kigger_noter_overlay_tekst {
+    color: white;
+    opacity: 1;
+  }
+
+  .galleri_turkis_column_4 {
+    grid-row: 2 / span 3;
+    grid-column: 4;
+    background: $turkis;
   }
 
   .projekter {
     grid-row: 6;
-    background-color: green;
+    display: grid;
+    grid-template-rows: auto auto 90px;
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+
+  .projekter h2 {
+    text-align: center;
+    color: white;
+    font-size: 20pt;
+  }
+
+  .projekter_projekter {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 460px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+
+  .projekter_projekter a {
+    align-self: center;
+  }
+
+  .projekter_projekter_mobile {
+    display: none;
+  }
+
+  .Projekter_overskrift {
+    grid-column: 2;
+  }
+
+  .den_gyldne_mikrofon {
+    grid-column: 1;
+    background: url("../images/den_gyldne_mikrofon.jpg") center;
+    background-size: cover;
+    margin: 0 10px 0 0;
+    padding: 0 0 0 0;
+
+    height: 350px;
+    width: 332px;
+    transition: .5s ease;
+  }
+
+  .den_gyldne_mikrofon:hover {
+    margin: 0 0 0 0;
+
+    height: 460px;
+    width: 442px;
+    transition: .5s ease;
+  }
+
+
+  .grangia_erhvervspris {
+    grid-column: 2;
+    background: url("../images/grangia.jpg") center;
+    background-size: cover;
+    margin: 0 10px 0 10px;
+    padding: 0 0 0 0;
+
+    height: 350px;
+    width: 332px;
+    transition: .5s ease;
+  }
+
+  .grangia_erhvervspris:hover {
+    margin: 0 0 0 0;
+
+    height: 460px;
+    width: 442px;
+    transition: .5s ease;
+  }
+
+  .snak_saa_debatter {
+    grid-column: 3;
+    background: url("../images/snak_saa_debatter_2.jpg") center;
+    background-size: cover;
+    margin: 0 0 0 10px;
+    padding: 0 0 0 0;
+
+    height: 350px;
+    width: 332px;
+    transition: .5s ease;
+  }
+
+  .snak_saa_debatter:hover {
+    margin: 0 0 0 0;
+
+    height: 460px;
+    width: 442px;
+    transition: .5s ease;
   }
 
   .medlemskab {
