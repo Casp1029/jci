@@ -58,15 +58,33 @@ img {
   background-color: white; }
 
 .dropdown {
-  text-align: center; }
+  text-align: center;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  font-family: "lato";
+  *background-color: aqua;
+  height: 100px; }
+
+.lillelogo {
+  width: 170px;
+  height: 83px;
+  margin-top: 10px;
+  margin-left: 20px; }
 
 header {
   position: fixed;
   width: 100%;
-  display: inline-block;
-  font-family: 'Lato', sans-serif;
-  height: 100px;
+  height: 115px;
+  background-color: white;
   z-index: 5000; }
+
+.header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 5000;
+  color: black; }
 
 .dropdown-content {
   display: none;
@@ -141,6 +159,28 @@ header {
   text-align: center;
   color: #0097d7; }
 
+.medlemskab {
+  grid-row: 6;
+  background-color: #ebf1f3; }
+
+.medlem_overskrift {
+  color: #0097d7;
+  margin: 0 auto;
+  line-height: 10pt; }
+
+.tilmeld_text {
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 80px; }
+
+.knap_container {
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 60px; }
+
 .text1 {
   color: black;
   text-align: center;
@@ -185,20 +225,9 @@ header {
   display: flex;
   justify-content: space-around; }
 
-.lillelogo {
-  *margin-top: 10px;
-  margin-left: 10px; }
-
 .fejlbillede {
   width: auto;
   height: auto; }
-
-.header {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  z-index: 5000;
-  color: black; }
 
 a:hover {
   color: #f37121;
@@ -272,33 +301,36 @@ a:hover {
   color: white;
   top: 5px; }
 
-header {
-  position: fixed;
-  width: 100%;
-  height: 115px;
-  background-color: white; }
-
 .kalender {
   grid-row: 4;
   background: url("../images/kalenderbaggrund.png"); }
 
-.medlem_overskrift {
-  color: #0097d7;
-  margin: 0 auto;
-  line-height: 10pt; }
+.galleri {
+  display: none; }
 
-.tilmeld_text {
-  height: auto;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 80px; }
+.projekter {
+  grid-row: 5;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto; }
 
-.knap_container {
-  height: auto;
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  margin-top: 60px; }
+.projekter h2 {
+  text-align: center;
+  color: white; }
+
+.Projekter_overskrift {
+  grid-row: 1; }
+
+.projekter_projekter {
+  display: none; }
+
+.projekter_projekter_mobile {
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: auto auto auto 70px;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+  justify-items: center; }
 
 .medlemskab_knap {
   background-color: #f37121;
@@ -315,6 +347,9 @@ footer {
   background-image: url("../images/1mobilbaggrund.png");
   background-size: cover;
   background-position: center; }
+
+footer h1 {
+  color: white; }
 
 .footer_overskrift {
   color: white; }
@@ -507,7 +542,7 @@ footer {
   margin-top: 30px;
   margin-bottom: 20px; }
 
-.some {
+.sarah_some {
   grid-row: 8;
   height: auto;
   width: 100%; }
@@ -531,13 +566,87 @@ footer {
   margin-right: 20%;
   padding-bottom: 20px; }
 
-.footer_tilmeld {
-  grid-row: 3; }
+.indhold_contaon {
+  height: auto;
+  width: 80%;
+  justify-content: space-between;
+  margin: auto; }
+
+.lortebillede {
+  flex-direction: row;
+  display: inline-flex;
+  height: 60%;
+  width: 50%;
+  float: right;
+  padding-top: 80px;
+  padding-left: 80px;
+  display: block; }
+
+.tilmeld_text {
+  flex-direction: row;
+  display: inline-flex;
+  height: 100%;
+  width: 50%; }
+
+.medlem1 {
+  height: auto;
+  width: 20%;
+  margin: 0 auto; }
+
+.medlem2 {
+  height: auto;
+  width: 20%;
+  margin: 0 auto; }
+
+.medlem3 {
+  height: auto;
+  width: 20%;
+  margin: 0 auto; }
+
+.medlem4 {
+  height: auto;
+  width: 20%;
+  margin: 0 auto; }
+
+.medlem5 {
+  height: auto;
+  width: 20%;
+  margin: 0 auto; }
 
 .body_tilmeld {
   display: grid;
   grid-template-rows: 85px auto auto;
   background-color: white; }
+
+#section_tilmeld {
+  grid-row: 2;
+  background-color: white; }
+
+.footer_tilmeld {
+  grid-row: 3; }
+
+.one_continer {
+  height: auto;
+  width: 100%;
+  justify-content: space-between; }
+
+.underside_overskrift {
+  color: #0097d7;
+  margin: 0 auto; }
+
+.underside_billde {
+  height: 80%;
+  width: 40%;
+  flex-direction: row;
+  display: flex;
+  margin-left: 80px;
+  margin-right: -80px; }
+
+.underside_text {
+  height: auto;
+  width: 100%;
+  flex-direction: row;
+  display: flex; }
 
 #section_tilmeld {
   grid-row: 2;
@@ -556,11 +665,7 @@ footer {
   margin-bottom: 10px; }
 
 form {
-  height: auto;
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  border-radius: 30px; }
+  text-align: center; }
 
 #from {
   height: auto;
@@ -598,7 +703,8 @@ button {
   color: white;
   border: none;
   border-radius: 5px;
-  margin-left: 28%;
+  text-align: center;
+  margin-top: 30px;
   margin-bottom: 30px; }
 
 #firstname {
@@ -629,34 +735,36 @@ button {
   width: 231px;
   margin: 3px; }
 
-.galleri {
-  display: none; }
-
-.projekter {
-  grid-row: 5;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto; }
-
-.projekter h2 {
-  text-align: center;
-  color: white; }
-
-.Projekter_overskrift {
-  grid-row: 1; }
-
-.projekter_projekter {
-  display: none; }
-
-.projekter_projekter_mobile {
-  grid-row: 2;
-  display: grid;
-  grid-template-rows: auto auto auto 70px;
-  grid-template-columns: 1fr;
-  grid-row-gap: 20px;
-  justify-items: center; }
-
 @media screen and (min-width: 992px) {
+  body {
+    display: grid;
+    margin: 0;
+    grid-template-rows: 85px 930px 950px 765px 770px auto 850px 785px; }
+
+  h1 {
+    font-size: 60pt;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; }
+
+  h2 {
+    font-size: 25pt;
+    font-family: 'Montserrat', sans-serif; }
+
+  h3 {
+    font-size: 18pt;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; }
+
+  p {
+    font-size: 14pt;
+    line-height: 24pt;
+    font-family: 'Lato', sans-serif; }
+
+  a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px; }
+
   .lillelogo {
     height: 55px;
     width: auto;
@@ -684,46 +792,18 @@ button {
   .dropdown {
     display: none; }
 
-  a {
-    color: black;
-    text-decoration: none;
-    font-size: 12px; }
-
   .some {
     display: block; }
-
-  body {
-    display: grid;
-    margin: 0;
-    grid-template-rows: 85px 930px 950px 765px 770px auto 770px 785px; }
-
-  button {
-    margin-left: 40%; }
-
-  h1 {
-    font-size: 60pt;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold; }
-
-  h2 {
-    font-size: 25pt;
-    font-family: 'Montserrat', sans-serif; }
-
-  h3 {
-    font-size: 18pt;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold; }
-
-  p {
-    font-size: 14pt;
-    line-height: 24pt;
-    font-family: 'Lato', sans-serif; }
 
   header {
     position: fixed;
     width: 100%;
     height: 85px;
     background-color: white; }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row; }
 
   .box1 {
     width: 33.3%; }
@@ -733,10 +813,6 @@ button {
 
   .box3 {
     width: 33.3%; }
-
-  .flex-container {
-    display: flex;
-    flex-direction: row; }
 
   .text1 {
     margin-left: 20%;
@@ -1042,53 +1118,6 @@ button {
     grid-row: 7;
     background-color: #ebf1f3; }
 
-  .indhold_contaon {
-    height: auto;
-    width: 80%;
-    justify-content: space-between;
-    margin: auto; }
-
-  .lortebillede {
-    flex-direction: row;
-    display: inline-flex;
-    height: 60%;
-    width: 50%;
-    float: right;
-    padding-top: 80px;
-    padding-left: 80px;
-    display: block; }
-
-  .tilmeld_text {
-    flex-direction: row;
-    display: inline-flex;
-    height: 100%;
-    width: 50%; }
-
-  .medlem1 {
-    height: auto;
-    width: 20%;
-    margin: 0 auto; }
-
-  .medlem2 {
-    height: auto;
-    width: 20%;
-    margin: 0 auto; }
-
-  .medlem3 {
-    height: auto;
-    width: 20%;
-    margin: 0 auto; }
-
-  .medlem4 {
-    height: auto;
-    width: 20%;
-    margin: 0 auto; }
-
-  .medlem5 {
-    height: auto;
-    width: 20%;
-    margin: 0 auto; }
-
   .footer_samarbejde {
     margin-bottom: 0px;
     align-content: center; }
@@ -1102,43 +1131,8 @@ button {
     background-position: center;
     background-size: cover; }
 
-  .some {
+  .sarah_some {
     display: none; }
-
-  .body_tilmeld {
-    display: grid;
-    grid-template-rows: 85px auto auto;
-    background-color: white; }
-
-  #section_tilmeld {
-    grid-row: 2;
-    background-color: white; }
-
-  .footer_tilmeld {
-    grid-row: 3; }
-
-  .one_continer {
-    height: auto;
-    width: 100%;
-    justify-content: space-between; }
-
-  .underside_overskrift {
-    color: #0097d7;
-    margin: 0 auto; }
-
-  .underside_billde {
-    height: 80%;
-    width: 40%;
-    flex-direction: row;
-    display: flex;
-    margin-left: 80px;
-    margin-right: -80px; }
-
-  .underside_text {
-    height: auto;
-    width: 100%;
-    flex-direction: row;
-    display: flex; }
 
   .underside_beskrivelse {
     height: auto;
