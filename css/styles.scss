@@ -13,13 +13,19 @@ $graa: #ebf1f3;
 body {
   display: grid;
   margin: 0;
-  grid-template-rows: 115px 1500px 1050px 1300px auto 880px 1220px 230px;
+  grid-template-rows: 115px 1500px 1050px 1300px auto auto auto 230px;
+
 }
 
 .body_tilmeld {
   display: grid;
   grid-template-rows: 115px auto auto;
 }
+
+$blaa: #0097d7;
+$orange: #f37121;
+$turkis: #99cccc;
+$graa: #ebf1f3;
 
 h1 {
  font-size: 45pt;
@@ -48,6 +54,8 @@ p {
   margin: 0; // Ingen ydre margen fra paragraffer
   padding: 0; // Ingen indre margen fra paragraffer
 }
+
+
 
 ul, ol {
   margin: 0; // Ingen ydre margen fra lister
@@ -183,6 +191,44 @@ header {
   color: #0097d7;
 }
 
+
+.galleri {
+
+}
+
+.projekter {
+  grid-row: 5;
+  background-color: green;
+}
+
+.medlemskab {
+
+  grid-row: 6;
+  background-color: $graa;
+
+}
+
+.medlem_overskrift{
+  color: $blaa;
+  margin: 0 auto;
+line-height: 10pt;
+
+}
+
+.tilmeld_text{
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
+
+}
+.knap_container{
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 60px;
+
 .text1{
   color: black;
   text-align: center;
@@ -200,7 +246,445 @@ header {
   width: 13vw;
   height: 10vw;
   margin: 0 auto;
+
 }
+.medlemskab_knap{
+  background-color: $orange;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.lortebillede{
+  display: none;
+}
+
+
+
+footer {
+  grid-row: 7;
+   background-image: url("../images/1mobilbaggrund.png");
+ background-size: cover;
+  background-position: center;
+  
+    }
+
+.footer_overskrift{
+  color: white;
+}
+
+.footer_mennesker{
+
+
+  }
+
+
+
+.medlem1{
+  margin: 0 auto;
+  height: 60%;   
+  width: 60%;    
+}                
+
+
+
+.mennesker1{
+    height: 100%;
+    width: 33%;
+    color: white;
+    display: flex;
+   flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.mennesker1 p {
+  font-size: 8.5pt;
+
+  line-height: 10pt;
+
+}
+  .om1{
+    text-align: center;
+    width: 100%;
+    font-weight: normal;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+  }
+  .om11{
+  text-align: center;
+    font-weight: 100;
+
+  }
+
+
+
+  .menneske2{
+    height: 100%;
+    width: 33%;
+    color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+
+  }
+.menneske2 p {
+  font-size: 8.5pt;
+
+  line-height: 10pt;
+
+}
+.om2{
+  text-align: center;
+  width: 100%;
+  font-weight: normal;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+.om22{
+  text-align: center;
+  font-weight: 100;
+
+}
+.medlem2{
+  margin: 0 auto;
+  height: 60%;
+  width: 60%;
+}
+  .menneske3{
+    height: 100%;
+    width: 33%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+.menneske3 p {
+  font-size: 8.5pt;
+  line-height: 10pt;
+
+}
+.om3{
+  text-align: center;
+  width: 100%;
+  font-weight: normal;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+.om33{
+  text-align: center;
+  font-weight: 100;
+
+}
+
+.medlem3{
+  margin: 0 auto;
+  height: 60%;
+  width: 60%;
+}
+
+  .menneske4{
+    height: 100%;
+    width: 33%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px;
+  }
+.menneske4 p {
+  font-size: 8.5pt;
+  line-height: 10pt;
+  width: auto;
+
+
+
+}
+.om4{
+  text-align: center;
+  width: 100%;
+  font-weight: normal;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+.om44{
+  text-align: center;
+  font-weight: 100;
+
+
+}
+.medlem4{
+  margin: 0 auto;
+  height: 60%;
+  width: 60%;
+}
+
+  .menneske5{
+    height: 100%;
+    width: 33%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px;
+  }
+
+  .menneske5 p {
+    font-size: 8.5pt;
+    line-height: 10pt;
+    width: auto;
+
+
+  }
+  .om5{
+    text-align: center;
+    width: 100%;
+    font-weight: normal;
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+  .om55 {
+    text-align: center;
+    font-weight: 100;
+
+  }
+
+.medlem5{
+  margin: 0 auto;
+  height: 60%;
+  width: 60%;
+}
+
+.container1{
+flex-direction: row;
+  display: inline-flex;
+  height: 80%;
+  width: 100%;
+
+}
+
+.container2{
+flex-direction: row;
+  display: inline-flex;
+  margin-top: 50px;
+  height: 80%;
+  width: 100%;
+
+
+}
+
+
+
+  .footer_samarbejde{
+    float: left;
+    height: auto;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+.sam1{
+  height: 50%;
+  margin-left: 3px;
+  margin-right: 5px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+.sam2{
+  height: 50%;
+  margin-left: 10px;
+  margin-right:10px;
+  display: inline-flex;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.sam3{
+  height: 50%;
+margin-right: 3px;
+  margin-left: 5px;
+  display: inline-flex;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+
+
+
+
+.some{
+  grid-row: 8;
+  height: auto;
+  width: 100%;
+
+}
+
+.some_overskrift{
+  color: $blaa;
+  text-align: center;
+  margin-bottom: 10px;
+
+
+
+  }
+
+.linkedin{
+  border: none;
+  background-color: white;
+  float: left;
+  margin-left: 20%;
+  padding-bottom: 20px;
+  }
+
+.facebook{
+  border: none;
+  background-color: white;
+  float: right;
+  margin-right: 20%;
+  padding-bottom: 20px;
+}
+
+
+.footer_tilmeld {  
+  grid-row: 3;
+                   
+}
+
+.body_tilmeld {
+  display: grid;
+  grid-template-rows: 85px auto auto;
+  background-color: white;
+}
+
+
+#section_tilmeld {
+  grid-row: 2;
+  background-color: white;
+}
+
+.underside_billde{
+  margin-left: 15%;
+}
+
+.underside_overskrift{
+  color: $blaa;
+}
+
+.underside_beskrivelse{
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+form{
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 30px;
+
+}
+#from{
+   height: auto;
+  width: 100%;
+  margin: 0 auto;
+ 
+}
+
+.entext{
+  text-align: center;
+  margin: 20px;
+  font-weight: bolder;
+  
+}
+
+input{
+  border: 2px solid $blaa;
+  border-radius: 4px;
+  width: 60%;
+
+}
+
+#2from{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.action{
+  margin: 50px;
+  border: 1px solid $blaa;
+}
+
+
+input[type=checkbox]{
+width: auto;
+  height: auto;
+  border: 1px solid $blaa;
+  background-color: $blaa;
+  border-radius: 4px;
+  box-shadow: $blaa;
+}
+
+button{
+  background-color: $orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 28%;
+  margin-bottom: 30px;
+}
+
+.from{
+
+}
+
+#firstname{
+  width: 198px;
+  margin: 3px;
+
+}
+#lastname{
+  width: 178px;
+  margin: 3px;
+}
+
+#firstnametext{
+
+}
+
+#adresse{
+  width: 200px;
+  margin: 3px;
+}
+
+#postnummer{
+  width: 160px;
+  margin: 3px;
+}
+
+#by{
+  width: 252px;
+  margin: 3px;
+}
+
+#tlf{
+  width: 243px;
+  margin: 3px;
+}
+
+#mail{
+  width: 231px;
+  margin: 3px;
 
 .flex-container3 {
   display: flex;
@@ -209,6 +693,7 @@ header {
   color: #0097d7;
   margin-left: 10%;
   margin-right: 10%;
+
 }
 
 .flex-container3 h3 {
@@ -227,6 +712,12 @@ font-size: 7pt;
   font-size: 18pt;
   font-weight: bold;
   text-align: center;
+
+  body {
+    display: grid;
+    margin: 0;
+    grid-template-rows: 85px 685px 765px 765px 770px 770px 770px 785px;
+  }
 
 
 }
@@ -333,6 +824,10 @@ a:hover{
   top: 5px;
 }
 
+button{
+  margin-left: 40%;
+}
+
   header {
     position: fixed;
     width: 100%;
@@ -378,12 +873,146 @@ a:hover{
   justify-items: center;
 }
 
-  .medlemskab {
-    grid-row: 6;
-    background-color: aqua;
+
+ .medlemskab {               
+   grid-row: 7;              
+   background-color: $graa;  
+ }
+
+  .indhold_contaon{
+    height: auto;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+  }
+.lortebillede{
+  flex-direction: row;
+  display: inline-flex;
+  height: 60%;
+  width: 50%;
+  float: right;
+  padding-top: 80px;
+  padding-left: 80px;
+  display: block;
+}
+
+ .tilmeld_text{
+   flex-direction: row;
+   display: inline-flex;
+   height: 100%;
+   width: 50%;
+  
+ 
+ }
+
+ .medlem1{           
+   height: auto;     
+   width: 20%;       
+   margin: 0 auto;   
+ }                   
+
+.medlem2 {
+
+  height: auto;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.medlem3 {
+
+  height: auto;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.medlem4{
+
+ height: auto;
+ width: 20%;
+ margin: 0 auto;
+
+}
+
+.medlem5{
+
+
+ height: auto;    
+ width: 20%;      
+ margin: 0 auto;  
+
+
+}
+
+  .footer_samarbejde{
+    margin-bottom: 0px;
+    align-content:center;
+  }
+.sam3{
+  margin-bottom: 5px;
+}
+  footer {
+    grid-row: 8;
+    background-image: url("../images/1mobilbaggrund.png");
+    background-position: center;
+    background-size: cover;
   }
 
-  footer {
+
+
+.some{
+  display: none;
+}
+
+
+  // TILMELD SIDE
+
+  .body_tilmeld {
+    display: grid;
+    grid-template-rows: 85px auto auto;
+    background-color: white;
+  }
+
+  #section_tilmeld {
+    grid-row: 2;
+    background-color: white;
+  }
+
+  .footer_tilmeld {
+    grid-row: 3;
+
+  }
+  .one_continer{
+    height: auto;
+    width: 100%;
+    justify-content: space-between;
+    
+  }
+
+  .underside_overskrift{
+    color: $blaa;
+    margin: 0 auto;
+  }
+
+  .underside_billde{
+    height: 80%;
+    width: 40%;
+    flex-direction: row;
+    display: flex;
+    margin-left: 80px;
+    margin-right: -80px;
+   
+  }
+
+  .underside_beskrivelse{
+  }
+  .underside_text{
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+   
+  }
+
     grid-row: 7;
     background-color: burlywood;
   }
@@ -847,36 +1476,22 @@ a:hover{
       transition: .5s ease;
     }
 
-    .medlemskab {
-      grid-row: 7;
-      background-color: aqua;
-    }
 
-    footer {
-      grid-row: 8;
-      background-color: burlywood;
-    }
-
-    // TILMELD SIDE
-
-    .body_tilmeld {
-      display: grid;
-      grid-template-rows: 85px 685px 765px;
-    }
-
-    .section_tilmeld {
-      grid-row: 2;
-      background-color: cornflowerblue;
-    }
-
-    .footer_tilmeld {
-      grid-row: 3;
-      background-color: burlywood;
-    }
-
+  .underside_beskrivelse{
+    height: auto;
+    width: 40%;
   }
 
+  .entext{
+    margin-left: 22%;
+  }
 
+  .from{
+    width: 100%;
+    
+  }
+}
+// hej hej hej 
 @media screen and (min-width: 1200px) {
 
 }
